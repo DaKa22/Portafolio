@@ -5,7 +5,7 @@ ENV TZ=America/Bogota
 COPY ./portafolio.conf /etc/apache2/sites-available/000-default.conf
 WORKDIR /var/www/html
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
-    && a2enmod rewrite a2enmod ss \
+    && a2enmod rewrite \
     && echo $TZ > /etc/timezone \
     && apt-get update && apt install -y \
     curl \
