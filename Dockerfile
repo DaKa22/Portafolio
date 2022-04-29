@@ -4,7 +4,6 @@ LABEL maintainer="DaKa"
 ENV TZ=America/Bogota
 
 WORKDIR /var/www/html
-COPY ./portafolio.conf /etc/apache2/sites-available/000-default.conf
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
     && a2enmod rewrite \
     && echo $TZ > /etc/timezone \
@@ -25,6 +24,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
     && docker-php-ext-install zip \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
     && apt-get install
+
+COPY ./portafolio.conf /etc/apache2/sites-available/000-default.conf
 COPY . /var/www/html
 COPY .env.example .env
 RUN  composer install
