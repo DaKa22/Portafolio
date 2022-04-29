@@ -5,7 +5,7 @@ ENV TZ=America/Bogota
 
 WORKDIR /var/www/html
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
-    && a2enmod rewrite \
+    && a2enmod rewrite a2enmod ss \
     && echo $TZ > /etc/timezone \
     && apt-get update && apt install -y \
     curl \
