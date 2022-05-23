@@ -49,7 +49,7 @@
                                     He estado trabajando desde 2020. Soy competente manejo de servidores con cluster en Docker y Kubernetes. marketing digital y desarrollo web.
                                 </p>
 								<div class="hro-btn wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".9s">
-									<a href="{{asset('CV.pdf')}} " download="DavidBermeo_CV.pdf" class="theme-btn">
+									<a href="{{asset('cv/CV.pdf')}} " download="DavidBermeo_CV.pdf" class="theme-btn">
 										Descargar CV
 									</a>
 								</div>
@@ -58,10 +58,10 @@
 						<div class="col-md-5 col-sm-12 mt-50"><!-- col-6 -->
 							<div class="right-social-icon">
 								<ul class="social-icon">
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									{{-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 									<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
 									<li><a href="#"><i class="fab fa-behance"></i></a></li>
-									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> --}}
 								</ul>
 							</div>
 						</div><!-- end col-6 -->
@@ -90,7 +90,7 @@
 						<div class="col-md-5 mb-50">
 							<div class="about-left wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 								<div class="about-header-img">
-									<img src="img/about-me.png" alt="about me" class="responsive-fluid bounce-animate" />
+									<img src="img/perfil.png" alt="about me" class="responsive-fluid bounce-animate" />
 								</div>
 							</div>
 						</div>	<!-- about left text end -->
@@ -304,7 +304,7 @@
 				<div class="row pt-70"><!-- start row-->
 					<div class="col-md-12">
 						<div class="download-cv-btn text-center">
-							<a href="#" class="theme-btn">Download CV</a>
+							<a href="{{asset('cv/CV.pdf')}}" download="DavidBermeo_CV.pdf" class="theme-btn">Download CV</a>
 						</div>
 					</div>
 				</div><!-- end row-->
@@ -450,7 +450,7 @@
 
 		<!-- Start Faq
 		============================================= -->
-        <div class="fq-area de-padding">
+        {{-- <div class="fq-area de-padding">
             <div class="container pl-20"> <!-- start container -->
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
@@ -541,7 +541,7 @@
                     </div> <!-- end col-8 -->
                 </div> <!-- end row -->
             </div> <!-- end container -->
-        </div><!-- End Faq -->
+        </div><!-- End Faq --> --}}
 
         <!-- Start Project Area
 ============================================= -->
@@ -736,7 +736,7 @@
 
 		<!-- Start Pricing
 		============================================= -->
-		<div class="price-area de-padding">
+		{{-- <div class="price-area de-padding">
 			<div class="container pl-20"> <!-- start container -->
 				<div class="site-title text-center">
 					<span class="top-title wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">
@@ -827,12 +827,12 @@
 					</div> <!-- end single price-->
 				</div> <!-- end price-area -->
 			</div> <!-- end container -->
-		</div>
+		</div> --}}
 		<!-- End Pricing -->
 
 		<!-- Start Blog
 		============================================= -->
-		<div id="blog" class="blog-area de-padding">
+		{{-- <div id="blog" class="blog-area de-padding">
 			<div class="container pl-20">
 				<div class="site-title text-center">
 					<span class="top-title wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">Blog Posts</span>
@@ -928,7 +928,7 @@
 					</div> <!-- end single blog -->
 				</div>
 			</div> <!-- end container -->
-		</div>
+		</div> --}}
 		<!-- End Blog -->
 
 	    <div class="clearfix"></div>
