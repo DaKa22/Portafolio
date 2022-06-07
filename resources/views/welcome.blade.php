@@ -98,32 +98,38 @@
 							<div class="about-right wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s">
 								<span class="top-title">Acerca de</span>
 								<h2 data-splitting class="about-tl-3 gr-2 wow fadeInUp" data-wow-duration=".01s" data-wow-delay=".1s">
-									Creative Designer
+									Developer Web
 								</h2>
-								<p class="wow fadeInUp" data-wow-duration=".2s" data-wow-delay=".2s">
+								{{-- <p class="wow fadeInUp" data-wow-duration=".2s" data-wow-delay=".2s">
 									I am dedicated his life to learning what makes humans tick. He studies, researches and reads everything hecan, and shares his
 									findings with his clients. His philosophy is to learn, test, analyse,
 									improve and re-test. His motto is stay agile. I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.
 									<br />
 									I code and create web elements for amazing people around the world. I like work with new people.
 									New people new Experiences.
+								</p> --}}
+                                <p class="wow fadeInUp" data-wow-duration=".2s" data-wow-delay=".2s">
+									Soy una persona estudiosa con hambre de aprender nuevas experiencias, siempre buscando el porque de las cosas investigando como funciona todo.
+									<br />
+									Codifico y creo elementos web,API, Deploys de contenedores para personas increíbles de todo el mundo.<br />
+                                    Me gusta trabajar con gente nueva, conocer nuevos retos con el fin de superarme como constantemente mis espectativas de mi mismo.
 								</p>
 								<div class="row">	<!-- row -->
 									<div class="col-md-6 col-sm-12"><!-- col-6 -->
 										<div class="about-cn">
 											<ul>
-												<li><i class="fas fa-user-tie"></i> Devid William</li>
-												<li><i class="fab fa-skype"></i> chat@devid</li>
-												<li><i class="far fa-envelope"></i> chat@example.com</li>
+												<li><i class="fas fa-user-tie"></i> David Bermeo</li>
+                                                <li><a href="https://wa.me/+573112305173"><i class="fab fa-whatsapp"></i> +57 311 230 5173</a></li>
+												<li><i class="far fa-envelope"></i> davidbermeoquimbaya22dbqq@gmail.com</li>
 											</ul>
 										</div>
 									</div>	<!-- end col-6 -->
 									<div class="col-md-6 col-sm-12"><!-- col-6 -->
 										<div class="about-cn">
 											<ul>
-												<li><i class="fas fa-map-marker-alt"></i> 205 NewYork, USA</li>
-												<li><i class="fas fa-birthday-cake"></i> 14 Jan, 1988</li>
-												<li><i class="fab fa-whatsapp"></i> 123 456 7899</li>
+												<li><i class="fas fa-map-marker-alt"></i> Neiva - Huila, Colombia</li>
+												<li><i class="fas fa-birthday-cake"></i> 16 abril, 20002</li>
+
 											</ul>
 										</div>
 									</div> <!-- end col-6 -->
@@ -136,28 +142,28 @@
 							<span class="fun-icon one"><i class="icofont-calendar"></i></span>
 							<div class="fun-desc">
 								<p class="timer" data-to="2550" data-speed="3000">2550</p>
-								<span class="medium">Working Hours</span>
+								<span class="medium">Horas Trabajando</span>
 							</div>
 						</div>
 						<div class="fun-fact fun-active">
 							<span class="fun-icon two"><i class="icofont-globe"></i></span>
 							<div class="fun-desc">
-								<p class="timer" data-to="550" data-speed="3000">550</p>
-								<span class="medium">Total projects</span>
+								<p class="timer" data-to="15" data-speed="3000">550</p>
+								<span class="medium">Total proyectos</span>
 							</div>
 						</div>
 						<div class="fun-fact">
 							<span class="fun-icon three"><i class="icofont-bulb-alt"></i></span>
 							<div class="fun-desc">
-								<p class="timer" data-to="12" data-speed="3000">12</p>
-								<span class="medium">Years Journey</span>
+								<p class="timer" data-to="3" data-speed="3000">1</p>
+								<span class="medium">años de estudios</span>
 							</div>
 						</div>
 						<div class="fun-fact">
 							<span class="fun-icon four"><i class="icofont-nerd-smile"></i></span>
 							<div class="fun-desc">
-								<p class="timer" data-to="502" data-speed="3000">1500</p>
-								<span class="medium">Total Client</span>
+								<p class="timer" data-to="5" data-speed="3000">1500</p>
+								<span class="medium">Total Clientes</span>
 							</div>
 						</div>
 					</div> <!-- end counter -->
@@ -171,79 +177,81 @@
 			<div class="container pl-20">
 				<div class="site-title text-center">
 					<span class="resume-title">
-						My Resume
+						Mi Resumen
 					</span>
 					<h2 data-splitting class="about-tl-3 gr-2 wow fadeInUp" data-wow-duration=".01s" data-wow-delay=".01s">
-						Education & Experience
+						Education & Experiencia
 					</h2>
 				</div> <!-- end section title -->
 				<div class="exp-wpr row">
 					<div class="col-md-6"><!-- start col-6 -->
 						<div class="experience_area">
-							<div class="exp-box mt-20 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".2s"><!-- start one -->
+                            <div class="exp-box mt-20 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s"><!-- start one -->
 								<div class="exp-icon one">
-									<i class="icofont-designfloat"></i>
+									<i class="fas fa-server"></i>
 								</div>
 								<div class="exp-content">
-									<h4>UX / UI Designer</h4>
-									<p>Apple Inc (2017 - 2020)</p>
-									<span class="exp-description pt-10">Contrary the on way yollis pellentesque pellentesque feugiat risus met.</span>
+									<h4>DevOps</h4>
+									<p>Cootranshuila (2021 - 2022)</p>
+									<span class="exp-description pt-10">DevOps en Cootranshuila en el desarrollo de un software de transporte administrativo a nivel nacional.</span>
 								</div>
 							</div> <!-- end one -->
-							<div class="exp-box mt-30 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start two -->
-								<div class="exp-icon two">
-									<i class="icofont-file-python"></i>
+							<div class="exp-box mt-20 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".2s"><!-- start one -->
+								<div class="exp-icon one">
+									<i class="fab fa-docker"></i>
 								</div>
 								<div class="exp-content">
-									<h4>python Developer</h4>
-									<p>Google Inc (2015 - 2016)</p>
-									<span class="exp-description pt-10">Contrary the on way yollis pellentesque pellentesque feugiat risus amet.</span>
+									<h4>Docker Developer</h4>
+									<p>Empirico (2021 - 2022)</p>
+									<span class="exp-description pt-10">reduccion drastica de errores al tener todo en contenedores para deploy.</span>
+								</div>
+							</div> <!-- end one -->
+                            <div class="exp-box mt-20 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".2s"><!-- start one -->
+								<div class="exp-icon one">
+									<i class="fab fa-laravel"></i>
+								</div>
+								<div class="exp-content">
+									<h4>Laravel Developer</h4>
+									<p>Empirico (2020 - 2021)</p>
+									<span class="exp-description pt-10">Gran framework que agiliza el trabajo , ideal para proyextos robustos.</span>
+								</div>
+							</div> <!-- end one -->
+
+
+						</div>
+					</div> <!-- end col-6 -->
+					<div class="col-md-6"><!-- start col-6 -->
+						<div class="education_area">
+                            <div class="exp-box mt-30 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start two -->
+								<div class="exp-icon two">
+									<i class="fab fa-php"></i>
+								</div>
+								<div class="exp-content">
+									<h4>PHP Developer</h4>
+									<p>Empirico (2020 - 2021)</p>
+									<span class="exp-description pt-10">Versatilidad en el momento al desarrollar Controladores.</span>
 								</div>
 							</div> <!-- end two -->
-							<div class="exp-box mt-30 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".6s"><!-- start three -->
+                            <div class="exp-box mt-30 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".6s"><!-- start three -->
 								<div class="exp-icon three">
 									<i class="icofont-code"></i>
 								</div>
 								<div class="exp-content">
 									<h4>Web Developer</h4>
-									<p>Themetum Ptv Ltd (2008 - 2014)</p>
-									<span class="exp-description pt-10">Contrary the on way yollis pellentesque pellentesque feugiat risus nunc.</span>
+									<p>Emprico (2019 - 2020)</p>
+									<span class="exp-description pt-10">Inclinacion al desarrolo en el back-end.</span>
 								</div>
 							</div> <!-- end three -->
-						</div>
-					</div> <!-- end col-6 -->
-					<div class="col-md-6"><!-- start col-6 -->
-						<div class="education_area">
-							<div class="exp-box mt-20 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s"><!-- start one -->
-								<div class="exp-icon four">
-									<i class="icofont-graduate-alt"></i>
-								</div>
-								<div class="exp-content">
-									<h4>MSc in CSE </h4>
-									<p>University of Enkha (2007 - 2008)</p>
-									<span class="exp-description pt-10">Contrary the on way yollis pellentesque pellentesque feugiat risus nunc.</span>
-								</div>
-							</div> <!-- end one -->
-							<div class="exp-box mt-30 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start two -->
+							<div class="exp-box mt-30 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start two -->
 								<div class="exp-icon five">
 									<i class="icofont-graduate"></i>
 								</div>
 								<div class="exp-content">
-									<h4>BSc in CSE  </h4>
-									<p>University of Enkha (2003 - 2006)</p>
-									<span class="exp-description pt-10">Contrary the on way yollis pellentesque pellentesque feugiat risus nunc.</span>
+									<h4>Tecnolgo en Desarrollo de Software  </h4>
+									<p>Universidad Surcolombiana (2019 - 2022)</p>
+									<span class="exp-description pt-10">Destacado entre el codigo por innovar.</span>
 								</div>
 							</div> <!-- end two -->
-							<div class="exp-box mt-30 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".6s"><!-- start three -->
-								<div class="exp-icon six">
-									<i class="icofont-ui-copy"></i>
-								</div>
-								<div class="exp-content">
-									<h4>High School Diploma  </h4>
-									<p>Enkha College (2001 - 2003)</p>
-									<span class="exp-description pt-10">Contrary the on way yollis pellentesque pellentesque feugiat risus nunc.</span>
-								</div>
-							</div> <!-- end three -->
 						</div>
 					</div> <!-- end col-6 -->
 				</div> <!-- end exp-wrp row -->
@@ -666,7 +674,7 @@
 
         <!-- Start Feedback
         ============================================= -->
-        <div id="feed" class="feedback-area de-padding">
+        {{-- <div id="feed" class="feedback-area de-padding">
             <div class="line_wrap"> <!-- line animation -->
                 <div class="line_item"></div>
                 <div class="line_item"></div>
@@ -731,7 +739,7 @@
                     </div> <!-- end single feedback -->
                 </div> <!-- end feedback-wpr -->
             </div> <!-- end container -->
-        </div>
+        </div> --}}
         <!-- End Feedback -->
 
 		<!-- Start Pricing

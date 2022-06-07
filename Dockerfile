@@ -18,17 +18,13 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
     libxml2-dev \
     libpq-dev \
     libzip-dev \
-    &&docker-php-ext-install pdo pdo_pgsql \
-    && docker-php-ext-configure gd \
-    && docker-php-ext-install -j$(nproc) gd \
-    && docker-php-ext-install zip \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
     && apt-get install
 
 
 COPY . /var/www/html
-COPY .env.example .env
-RUN  composer install
+# COPY .env.example .env
+RUN  composer install --optimize-autoloader --no-dev
 RUN  chmod -R ug+rwx storage bootstrap/cache \
     && chgrp -R www-data storage bootstrap/cache \
-    && php artisan storage:link
+    && php artisan storage:link && php artisan route:cache && php artisan view:cache

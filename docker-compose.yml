@@ -1,26 +1,39 @@
-version: '3'
+version: '3.5'
 services:
-  proxy:
-     container_name: nginx-manager
-     image: 'jc21/nginx-proxy-manager:latest'
-     restart: unless-stopped
-     ports:
-       - '80:80'
-       - '81:81'
-       - '443:443'
-     volumes:
-       - ./data:/data
-       - ./letsencrypt:/etc/letsencrypt
+#   proxy:
+#      container_name: nginx-manager
+#      image: 'jc21/nginx-proxy-manager:latest'
+#      restart: unless-stopped
+#      ports:
+#        - '80:80'
+#        - '81:81'
+#        - '443:443'
+#      volumes:
+#        - ./data:/data
+#        - ./letsencrypt:/etc/letsencrypt
   portafolio:
       build:
         context: .
         dockerfile: Dockerfile
       image: 'portafolio:latest'
       container_name: portafolio
-      ports:
-          - '100:80'
+    #   ports:
+    #       - '100:80'
       restart: always
       volumes:
           - 'cv:/var/www/html/cv'
+      env_file:
+          - ./.env.example
+      networks:
+          - proxy
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
 volumes:
   cv:
+networks:
+    proxy:
+        name: proxy
+        external: true
+
