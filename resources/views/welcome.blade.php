@@ -20,7 +20,9 @@
                             <a href="https://wa.me/+573112305173">
 							    <span class="phone_contact">+57 311 230 51 73</span>
                             </a>
-							<span class="email_contact">davidbermeoquimbaya22dbqq@gmail.com</span>
+							<a href="mailto:davidbermeoquimbaya22dbqq@correo.com">
+                                <span class="email_contact">davidbermeoquimbaya22dbqq@gmail.com</span>
+                            </a>
 						</div>
 					</div>
 				</div>
@@ -118,9 +120,9 @@
 									<div class="col-md-6 col-sm-12"><!-- col-6 -->
 										<div class="about-cn">
 											<ul>
-												<li><i class="fas fa-user-tie"></i> David Bermeo</li>
+												<li><a href="https://github.com/DaKa22"><i class="fas fa-user-tie"></i> David Bermeo</a></li>
                                                 <li><a href="https://wa.me/+573112305173"><i class="fab fa-whatsapp"></i> +57 311 230 5173</a></li>
-												<li><i class="far fa-envelope"></i> davidbermeoquimbaya22dbqq@gmail.com</li>
+												<li><a href="mailto:davidbermeoquimbaya22dbqq@correo.com"><i class="far fa-envelope"></i> davidbermeoquimbaya22dbqq@gmail.com</a></li>
 											</ul>
 										</div>
 									</div>	<!-- end col-6 -->
@@ -196,6 +198,16 @@
 									<span class="exp-description pt-10">DevOps en Cootranshuila en el desarrollo de un software de transporte administrativo a nivel nacional.</span>
 								</div>
 							</div> <!-- end one -->
+                            <div class="exp-box mt-20 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".2s"><!-- start one -->
+								<div class="exp-icon one">
+									<img src="{{asset('img/kubernetes-icon.svg')}}" >
+								</div>
+								<div class="exp-content">
+									<h4>Kubernetes Developer</h4>
+									<p>Empirico (2021 - 2022)</p>
+									<span class="exp-description pt-10">Automatización del despliegue, ajuste de escala y manejo de aplicaciones en contenedores .</span>
+								</div>
+							</div> <!-- end one -->
 							<div class="exp-box mt-20 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".2s"><!-- start one -->
 								<div class="exp-icon one">
 									<i class="fab fa-docker"></i>
@@ -222,7 +234,7 @@
 					</div> <!-- end col-6 -->
 					<div class="col-md-6"><!-- start col-6 -->
 						<div class="education_area">
-                            <div class="exp-box mt-30 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start two -->
+                            <div class="exp-box mt-20 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start two -->
 								<div class="exp-icon two">
 									<i class="fab fa-php"></i>
 								</div>
@@ -232,7 +244,17 @@
 									<span class="exp-description pt-10">Versatilidad en el momento al desarrollar Controladores.</span>
 								</div>
 							</div> <!-- end two -->
-                            <div class="exp-box mt-30 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".6s"><!-- start three -->
+                            <div class="exp-box mt-20 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start three -->
+								<div class="exp-icon one">
+									<img src="{{asset('img/postgresql-icon.svg')}}">
+								</div>
+								<div class="exp-content">
+									<h4>PostgreSQL Developer</h4>
+									<p>Emprico (2020 - 2021)</p>
+									<span class="exp-description pt-10">Preferencia en los desarrollos de proyectos robustos en compañia de laravel para optimizar las consultas.<br><br></span>
+								</div>
+							</div> <!-- end three -->
+                            <div class="exp-box mt-20 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start three -->
 								<div class="exp-icon three">
 									<i class="icofont-code"></i>
 								</div>
@@ -242,7 +264,7 @@
 									<span class="exp-description pt-10">Inclinacion al desarrolo en el back-end.</span>
 								</div>
 							</div> <!-- end three -->
-							<div class="exp-box mt-30 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start two -->
+							<div class="exp-box mt-20 wow fadeInDown" data-wow-duration=".6s" data-wow-delay=".4s"><!-- start two -->
 								<div class="exp-icon five">
 									<i class="icofont-graduate"></i>
 								</div>
@@ -261,21 +283,21 @@
 							<div class="skill-section">
 								<!-- Progress Bar Start -->
 								<div class="progress-box">
-									<h5>Wordpress Ninja  <span class="pull-right">85%</span></h5>
+									<h5>Docker  <span class="pull-right">65</span></h5>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" data-width="85"></div>
+										<div class="progress-bar" role="progressbar" data-width="65"></div>
 									</div>
 								</div>
 								<div class="progress-box">
-									<h5>UX/UI Design  <span class="pull-right">95%</span></h5>
+									<h5>Kubernetes  <span class="pull-right">10%</span></h5>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" data-width="95"></div>
+										<div class="progress-bar" role="progressbar" data-width="10"></div>
 									</div>
 								</div>
 								<div class="progress-box">
-									<h5>Python Development <span class="pull-right">75%</span></h5>
+									<h5>Laravel <span class="pull-right">70%</span></h5>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" data-width="75"></div>
+										<div class="progress-bar" role="progressbar" data-width="70"></div>
 									</div>
 								</div>
 								<!-- End Progressbar -->
@@ -287,19 +309,19 @@
 							<div class="skill-section">
 								<!-- Progress Bar Start -->
 								<div class="progress-box">
-									<h5>English <span class="pull-right">85%</span></h5>
+									<h5>Php <span class="pull-right">80%</span></h5>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" data-width="85"></div>
+										<div class="progress-bar" role="progressbar" data-width="80"></div>
 									</div>
 								</div>
 								<div class="progress-box">
-									<h5>French <span class="pull-right">95%</span></h5>
+									<h5>Postgresql <span class="pull-right">60%</span></h5>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" data-width="95"></div>
+										<div class="progress-bar" role="progressbar" data-width="60"></div>
 									</div>
 								</div>
 								<div class="progress-box">
-									<h5>Arabic <span class="pull-right">75%</span></h5>
+									<h5>Linux Server <span class="pull-right">75%</span></h5>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" data-width="75"></div>
 									</div>
@@ -325,23 +347,23 @@
 		<div id="service" class="service-area de-padding">
 			<div class="container pl-20">
 				<div class="site-title text-center"> <!-- service section title -->
-					<span class="resume-title">My Services</span>
+					<span class="resume-title">Mis servicios</span>
 					<h2 data-splitting class="about-tl-3 gr-2 wow fadeInUp" data-wow-duration=".01s" data-wow-delay=".01s">
-						A brief of Offerting Services
+						{{-- A brief of Offerting Services --}}
 					</h2>
 				</div>
 				<div class="row"> <!-- start row -->
 					<div class="col-md-4 col-sm-6">
 						<div class="service-box mt-30 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">
 							<div class="service-icon service-one">
-								<i class="icofont-vector-path"></i>
+								<i class="icofont-ui-browser"></i>
 							</div>
 							<div class="service-info">
-								<h2>Branding</h2>
+								<h2>Desarrollo Web</h2>
 								<ul>
-									<li>Logo design</li>
-									<li>Brand Guide</li>
-									<li>Brand Printing</li>
+									<li>Administrables</li>
+									<li>Sitios web personalizados</li>
+									<li>Hosting</li>
 								</ul>
 							</div>
 						</div> <!-- end service one -->
@@ -349,14 +371,14 @@
 					<div class="col-md-4 col-sm-6">
 						<div class="service-box mt-30 wow fadeInDown" data-wow-duration=".7s" data-wow-delay=".6s">
 							<div class="service-icon service-two">
-								<i class="icofont-ui-browser"></i>
+								<i class="fa fa-database"></i>
 							</div>
 							<div class="service-info">
-								<h2>Print Design</h2>
+								<h2>Estructuramiento Base de Datos</h2>
 								<ul>
-									<li>Business Card</li>
-									<li>Brochure</li>
-									<li>Magazine</li>
+									<li>Entidad Relacion</li>
+									<li>Diagrama caso de uso</li>
+									<li>Analisis Rapido</li>
 								</ul>
 							</div>
 						</div> <!-- end service two -->
@@ -364,14 +386,14 @@
 					<div class="col-md-4 col-sm-6">
 						<div class="service-box mt-30 wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".8s">
 							<div class="service-icon service-three">
-								<i class="icofont-ui-theme"></i>
+								<i class="fas fa-server"></i>
 							</div>
 							<div class="service-info">
-								<h2>Wordpress Ninja</h2>
+								<h2>Servidores</h2>
 								<ul>
-									<li>PSD to WP</li>
-									<li>Woocommerce</li>
-									<li>Speed Optimization</li>
+									<li>Manejo de Microservicios</li>
+									<li>Manejo de contenedores en Docker</li>
+									<li>kubernetes</li>
 								</ul>
 							</div>
 						</div> <!-- end service three -->
@@ -382,11 +404,12 @@
 								<i class="icofont-ship-wheel"></i>
 							</div>
 							<div class="service-info">
-								<h2>Graphic Design</h2>
+								<h2>
+                                    Diseño Gráfico</h2>
 								<ul>
-									<li>Package Design</li>
-									<li>Email Signature</li>
-									<li>Social Media Banner</li>
+									<li>Diseño del paquete</li>
+									<li>Firma de email</li>
+									<li>Banner de redes sociales</li>
 								</ul>
 							</div>
 						</div> <!-- end service one -->
@@ -399,9 +422,9 @@
 							<div class="service-info">
 								<h2>Cyber Security</h2>
 								<ul>
-									<li>Ethical Hacking</li>
-									<li>Security Analysis</li>
-									<li>Remove Malware</li>
+									<li>Hacking Etico</li>
+									<li>Analisis de seguridad</li>
+									<li>eliminacion de  Malwares</li>
 								</ul>
 							</div>
 						</div> <!-- end service two -->
@@ -412,11 +435,12 @@
 								<i class="icofont-bulb-alt"></i>
 							</div>
 							<div class="service-info">
-								<h2>Web Development</h2>
+								<h2>Web Back-end</h2>
 								<ul>
-									<li>React JS</li>
-									<li>PSD to HTML</li>
-									<li>Javascript</li>
+									<li>Blades</li>
+									<li>API</li>
+									<li>Larevel</li>
+                                    {{-- <li>Docker</li> --}}
 								</ul>
 							</div>
 						</div> <!-- end service six -->
@@ -427,7 +451,7 @@
 
 		<!-- Start Hire Me
 		============================================= -->
-		<div class="hireme-area de-padding jarallax d-flex" data-jarallax='{"speed": 0.2}'>
+		{{-- <div class="hireme-area de-padding jarallax d-flex" data-jarallax='{"speed": 0.2}'>
 			<div class="container pl-20"> <!-- start container-->
 				<div class="hire-title">
 					<h2 data-splitting class="tl-3 text-white text-center wow fadeInUp" data-wow-duration=".01s" data-wow-delay=".01s"> Interested in working with me?</h2>
@@ -453,103 +477,10 @@
 					</div><!-- end col-6 -->
 				</div> <!-- end row -->
 			</div> <!-- end container -->
-		</div>
+		</div> --}}
 		<!-- End Hire Me-->
 
-		<!-- Start Faq
-		============================================= -->
-        {{-- <div class="fq-area de-padding">
-            <div class="container pl-20"> <!-- start container -->
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="faq-wpr"> <!-- start faq-wpr -->
-                            <div class="fq-right">
-                                <div class="faqs-title pb-30 text-center">
-                                    <span class="resume-title">FAQS</span>
-                                    <h2 data-splitting class="faqs-subtitle about-tl-3 gr-2 wow fadeInUp" data-wow-duration=".01s" data-wow-delay=".01s"> Have any questions?</h2>
-                                </div>
-                                <div class="site-title wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
-                                    <div class="accordion" id="accordionExample">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    1. What services do I offer ?
-                                                </button>
-                                            </h2>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusitempor is  exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                </div>
-                                            </div>
-                                        </div><!-- End accordion item -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            2. How will I complete your project?
-                                        </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusitempor is  exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        </div>
-                                        </div>
-                                    </div><!-- End accordion item -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            3. How will you pay me?
-                                        </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusitempor is  exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        </div>
-                                        </div>
-                                    </div><!-- End accordion item -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                            4. Why will you hire for your proejdct?
-                                        </button>
-                                        </h2>
-                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusitempor is  exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        </div>
-                                        </div>
-                                    </div><!-- End accordion item -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                            5. How will you get final project?
-                                        </button>
-                                        </h2>
-                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusitempor is  exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        </div>
-                                        </div>
-                                    </div><!-- End accordion item -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingSix">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                                            6. What is the process & my time zone?
-                                        </button>
-                                        </h2>
-                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusitempor is  exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        </div>
-                                        </div>
-                                    </div><!-- End accordion item -->
-                                    </div><!-- End accordion -->
-                                </div> <!-- end site-title -->
-                            </div> <!-- end faq-right -->
-                        </div> <!-- End faq-wpr -->
-                    </div> <!-- end col-8 -->
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </div><!-- End Faq --> --}}
+
 
         <!-- Start Project Area
 ============================================= -->
@@ -566,20 +497,20 @@
                     <div class="col-md-5 pl-20"> <!-- col-5 -->
                         <div class="site-title work_section_title">
                             <span class="top-title wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".3s">
-                                My Portfolio
+                                Mi Portafolio
                             </span>
                             <h2 data-splitting class="about-tl-3 gr-2 wow fadeInUp" data-wow-duration=".01s" data-wow-delay=".01s">
-                                Awesome Works
+                                Algunos Trabajos
                             </h2>
                         </div>
                     </div><!-- end col-5 -->
                     <div class="col-md-7"><!-- start col-7 -->
                         <ul class="col list-unstyled list-inline mb-0 text-uppercase work_menu mt-50" id="menu-filter">
                             <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".seo">UI/UX</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".webdesign">Branding</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".work">Design</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".wordpress">Wordpress</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".ui-ux">UI/UX</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".Web-site">Sitios Web</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".dashboard">Dashboard</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".docker">Docker</a></li>
                         </ul>
                     </div><!-- end col-7 -->
                 </div><!-- end row -->
@@ -587,80 +518,145 @@
                     <div class="col-md-12"> <!-- start col-9 -->
                         <div class="container portfolio-container"> <!-- container -->
                             <div class="row work-filter">
-                                <div class="col-md-4 work_item work wordpress">
-                                    <a href="img/portfolio/1.jpg" class="img-zoom">
+                                <div class="col-md-4 work_item Web-site work ui-ux">
+                                    <a href="img/portfolio/1.png" class="img-zoom">
                                         <div class="work_box">
                                             <div class="work_img">
-                                                <img src="img/portfolio/1.jpg" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                                <img src="img/portfolio/1.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
                                             </div>
                                             <div class="work_detail">
-                                                <p class="mb-2">Category</p>
-                                                <h4 class="mb-0">Project Title</h4>
+                                                <p class="mb-2">Sitio Web</p>
+                                                <h4 class="mb-0">Cootranshuila.com</h4>
                                             </div>
                                         </div>
                                     </a>
                                 </div> <!-- end col-4 -->
-                                <div class="col-md-4 work_item webdesign wordpress">
-                                    <a href="img/portfolio/2.jpg" class="img-zoom">
+                                <div class="col-md-4 work_item ui-ux">
+                                    <a href="img/portfolio/2.png" class="img-zoom">
                                         <div class="work_box">
                                             <div class="work_img">
-                                                <img src="img/portfolio/2.jpg" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                                <img src="img/portfolio/2.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
                                             </div>
                                             <div class="work_detail">
-                                                <p class="mb-2">Category</p>
-                                                <h4 class="mb-0">Project Title</h4>
+                                                <p class="mb-2">Dashboard</p>
+                                                <h4 class="mb-0">Login Administrativo</h4>
                                             </div>
                                         </div>
                                     </a>
                                 </div> <!-- end col-4 -->
-                                <div class="col-md-4 work_item webdesign seo wordpress">
-                                    <a href="img/portfolio/3.jpg" class="img-zoom">
+                                <div class="col-md-4 work_item  dashboard Web-site">
+                                    <a href="img/portfolio/3.png" class="img-zoom">
                                         <div class="work_box">
                                             <div class="work_img">
-                                                <img src="img/portfolio/3.jpg" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                                <img src="img/portfolio/3.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
                                             </div>
                                             <div class="work_detail">
-                                                <p class="mb-2">Category</p>
-                                                <h4 class="mb-0">Project Title</h4>
+                                                <p class="mb-2">Dashboard</p>
+                                                <h4 class="mb-0">Dashboard Administrativo</h4>
                                             </div>
                                         </div>
                                     </a>
                                 </div> <!-- end col-4 -->
-                                <div class="col-md-4 work_item work wordpress">
-                                    <a href="img/portfolio/4.jpg" class="img-zoom">
+                                <div class="col-md-4 work_item  Web-site ui-ux">
+                                    <a href="img/portfolio/4.png" class="img-zoom">
                                         <div class="work_box">
                                             <div class="work_img">
-                                                <img src="img/portfolio/4.jpg" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                                <img src="img/portfolio/4.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
                                             </div>
                                             <div class="work_detail">
-                                                <p class="mb-2">Category</p>
-                                                <h4 class="mb-0">Project Title</h4>
+                                                <p class="mb-2">Ecommerce</p>
+                                                <h4 class="mb-0">Compra de Tiquetes</h4>
                                             </div>
                                         </div>
                                     </a>
                                 </div> <!-- end col-4 -->
-                                <div class="col-md-4 work_item webdesign wordpress">
-                                    <a href="img/portfolio/5.jpg" class="img-zoom">
+                                <div class="col-md-4 work_item ui-ux">
+                                    <a href="img/portfolio/5.png" class="img-zoom">
                                         <div class="work_box">
                                             <div class="work_img">
-                                                <img src="img/portfolio/5.jpg" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                                <img src="img/portfolio/5.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
                                             </div>
                                             <div class="work_detail">
-                                                <p class="mb-2">Category</p>
-                                                <h4 class="mb-0">Project Title</h4>
+                                                <p class="mb-2">Instalador de Impresora (Api Local)</p>
+                                                <h4 class="mb-0">ApiPrinter</h4>
                                             </div>
                                         </div>
                                     </a>
                                 </div> <!-- end col-4 -->
-                                <div class="col-md-4 work_item webdesign seo wordpress">
-                                    <a href="img/portfolio/6.jpg" class="img-zoom">
+                                <div class="col-md-4 work_item  Web-site ui-ux">
+                                    <a href="img/portfolio/6.png" class="img-zoom">
                                         <div class="work_box">
                                             <div class="work_img">
-                                                <img src="img/portfolio/6.jpg" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                                <img src="img/portfolio/6.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
                                             </div>
                                             <div class="work_detail">
-                                                <p class="mb-2">Category</p>
-                                                <h4 class="mb-0">Project Title</h4>
+                                                <p class="mb-2">Ecommerce</p>
+                                                <h4 class="mb-0">Pasarela de Pagos</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> <!-- end col-4 -->
+                                <div class="col-md-4 work_item  dashboard ui-ux">
+                                    <a href="img/portfolio/7.png" class="img-zoom">
+                                        <div class="work_box">
+                                            <div class="work_img">
+                                                <img src="img/portfolio/7.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                            </div>
+                                            <div class="work_detail">
+                                                <p class="mb-2">Login</p>
+                                                <h4 class="mb-0">InterTransporte</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> <!-- end col-4 -->
+                                <div class="col-md-4 work_item Web-site ui-ux">
+                                    <a href="img/portfolio/8.png" class="img-zoom">
+                                        <div class="work_box">
+                                            <div class="work_img">
+                                                <img src="img/portfolio/8.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                            </div>
+                                            <div class="work_detail">
+                                                <p class="mb-2">Dashboard</p>
+                                                <h4 class="mb-0">InterTransporte</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> <!-- end col-4 -->
+                                <div class="col-md-4 work_item dashboard ui-ux">
+                                    <a href="img/portfolio/9.png" class="img-zoom">
+                                        <div class="work_box">
+                                            <div class="work_img">
+                                                <img src="img/portfolio/9.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                            </div>
+                                            <div class="work_detail">
+                                                <p class="mb-2">Parametrizable</p>
+                                                <h4 class="mb-0">InterTransporte</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> <!-- end col-4 -->
+                                <div class="col-md-4 work_item Web-site ui-ux">
+                                    <a href="img/portfolio/10.png" class="img-zoom">
+                                        <div class="work_box">
+                                            <div class="work_img">
+                                                <img src="img/portfolio/10.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                            </div>
+                                            <div class="work_detail">
+                                                <p class="mb-2">Venta Tiquetes</p>
+                                                <h4 class="mb-0">InterTransporte</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> <!-- end col-4 -->
+                                <div class="col-md-4 work_item dashboard docker">
+                                    <a href="img/portfolio/11.png" class="img-zoom">
+                                        <div class="work_box">
+                                            <div class="work_img">
+                                                <img src="img/portfolio/11.png" class="img-fluid mx-auto d-block rounded" alt="work-img">
+                                            </div>
+                                            <div class="work_detail">
+                                                <p class="mb-2">Administrador de dominios (hosting)</p>
+                                                <h4 class="mb-0">Nginx Manager SSL</h4>
                                             </div>
                                         </div>
                                     </a>

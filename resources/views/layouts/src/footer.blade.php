@@ -85,7 +85,7 @@
     <div class="copyright-area"> <!-- start copyright -->
         <div class="container"> <!-- container -->
             <div class="row">
-                <div class="col-md-6 mt-50">
+                <div class="col-md-8 mt-50">
                     <div class="copyright-left wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
                         <span class="copyright-text"> Copyright &copy;<script>document.write(new Date().getFullYear())</script>
                             <a href="https://github.com/DaKa22">
@@ -95,24 +95,15 @@
                         </span>
                     </div>
                 </div> <!-- end col-5 -->
-                {{-- <div class="col-md-4 mt-50">
-                    <div class="copyright-right wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".8s">
-                        <div class="copyright-menu">
-                            <a href="#">Faqs   /</a>
-                            <a href="#">privacy policy   /</a>
-                            <a href="#">services</a>
-                        </div>
-                    </div>
-                </div> <!-- end col-4 --> --}}
-                {{-- <div class="col-md-2 mt-50">
+                <div class="col-md-2 mt-50">
                     <div class="copyright-social wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".9s">
                         <ul class="footer-social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/DaKa22"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://wa.me/+573112305173"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="mailto:davidbermeoquimbaya22dbqq@correo.com"><i class="fas fa-envelope"></i></a></li>
                         </ul>
                     </div>
-                </div> <!-- end col-3 --> --}}
+                </div> <!-- end col-3 -->
             </div>
         </div> <!-- end container -->
     </div> <!-- end copyright area -->
