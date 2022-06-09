@@ -26,10 +26,10 @@ services:
           - ./.env.example
       networks:
           - proxy
-      resources:
-        limits:
-          cpus: '0.50'
-          memory: 512M
+    #   resources:
+    #     limits:
+    #       cpus: '0.50'
+    #       memory: 512M
 volumes:
   cv:
 networks:

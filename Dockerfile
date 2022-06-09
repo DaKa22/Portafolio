@@ -18,9 +18,9 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
     libxml2-dev \
     libpq-dev \
     libzip-dev \
+    && docker-php-ext-install zip \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
     && apt-get install
-
 
 COPY . /var/www/html
 # COPY .env.example .env
