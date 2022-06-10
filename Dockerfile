@@ -21,7 +21,6 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
     && docker-php-ext-install zip \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
     && apt-get install
-COPY ./docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY . /var/www/html
 COPY .env.example .env
 RUN  composer install --optimize-autoloader --no-dev
