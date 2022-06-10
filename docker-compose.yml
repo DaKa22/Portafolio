@@ -22,8 +22,8 @@ services:
       restart: always
       volumes:
           - 'cv:/var/www/html/cv'
-      env_file:
-          - ./.env.example
+    #   env_file:
+    #       - ./.env.example
       networks:
           - proxy
     #   resources:

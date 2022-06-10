@@ -10,26 +10,28 @@
             <div class="col-md-7">
                 <div class="contact-area">
                     <div class="contact-left mt-20">
-                        <form class="contact-form" id="contact-form" action="php/contact.php" method="POST">
+                        <form class="contact-form" id="contact-form" action="{{ route('email')}}" method="POST">
+                            @csrf
+                        {{-- <form class="contact-form" id="contact-form" action="php/contact.php" method="POST"> --}}
                             <div class="row g-4">
                                 <div class="col-md-12 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
-                                    <input type="text" name="subject" class="form-control input-style-2" placeholder="Asunto">
+                                    <input type="text" name="subject" class="form-control input-style-2" placeholder="Asunto" required>
                                 </div>
                                 <div class="col-md-12 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".3s">
-                                    <input type="text" name="name" class="form-control input-style-2" placeholder="Nombre">
+                                    <input type="text" name="name" class="form-control input-style-2" placeholder="Nombre" required>
                                 </div>
                                 <div class="col-md-12 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s">
-                                    <input type="email" name="email" class="form-control input-style-2" placeholder="Correo Electronico">
+                                    <input type="email" name="email" class="form-control input-style-2" placeholder="Correo Electronico" required>
                                 </div>
                                 <div class="col-12 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".5s">
-                                    <textarea class="form-control input-style-2" name="message" placeholder="Mensaje"></textarea>
+                                    <textarea class="form-control input-style-2" name="message" placeholder="Mensaje" required></textarea>
                                 </div>
                                 <div class="col-12 text-center wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".6s">
                                     <button type="submit" class="theme-btn send-me mt-30 text-center">
                                         Enviar
                                     </button>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-12">
                                     <p class="form-message"></p>
                                 </div>
                             </div>

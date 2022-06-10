@@ -1,11 +1,11 @@
 /* ===================================================================
-    
+
 		Theme Name:  Willam | Personal Portfolio vCard HTML Template
 		Author: Themetum
 		Version: 1.0
-    
+
 * ================================================================= */
-jQuery(document).ready(function(){ 
+jQuery(document).ready(function(){
 
 	"use strict";
 
@@ -15,35 +15,35 @@ jQuery(document).ready(function(){
 			$('.preloader').delay(333).fadeOut('slow'); // will fade out the white DIV that covers the website.
 			$('body').delay(333);
 		});
-		
+
 
 		// Header Sticky
-		
+
 			$(window).scroll( function() {
 				$(window).scrollTop() >= 50 ? $(".sticky").addClass("stickyadd") : $(".sticky").removeClass("stickyadd")
 			})
-			  
+
 			  $(document).on("click", ".navbar-collapse.show", function(e) {
 				$(e.target).is("a") && $(this).collapse("hide")
-			}) 
-			  
+			})
+
 			 $(".navbar-nav a, .scroll_down a").click( function(e) {
 				var a = $(this);
 				$("html, body").stop().animate({
 					scrollTop: $(a.attr("href")).offset().top - 0
 				}, 1500, "easeInOutExpo"), e.preventDefault()
-			}) 
-			  
+			})
+
 			  $("#navbarCollapse").scrollspy({
 				offset: 20
 			})
 
-			
-			
+
+
         /* ==================================================
             # Smooth Scroll
          =============================================== */
-		 
+
 		// Sections Scroll
 		if($("body").hasClass("side-header")){
 			$('.smooth-scroll').click( function() {
@@ -79,16 +79,16 @@ jQuery(document).ready(function(){
 			  }
 			}
 
-		
+
 		 /* ==================================================
             # Youtube Video Init
          ===============================================*/
         $('.player').mb_YTPlayer();
-		
+
 		/* ==================================================
 			# Portfolio Menu
 		 =============================================== */
-		 
+
 		$(window).on("load", function() {
 			var e = $(".work-filter"),
 				a = $("#menu-filter");
@@ -99,8 +99,8 @@ jQuery(document).ready(function(){
 					duration: 750,
 					easing: "linear"
 				}
-			}), 
-			
+			}),
+
 			a.find("a").click( function() {
 				var o = $(this).attr("data-filter");
 				return a.find("a").removeClass("active"), $(this).addClass("active"), e.isotope({
@@ -112,7 +112,7 @@ jQuery(document).ready(function(){
 					}
 				}), !1
 			})
-		}), 
+		}),
 
 		$(".img-zoom").magnificPopup({
 			type: "image",
@@ -138,7 +138,7 @@ jQuery(document).ready(function(){
 			backDelay: 3000,
 		});
 		});
-		
+
 
 		/*------------------------------------
 			WOW animation
@@ -155,8 +155,8 @@ jQuery(document).ready(function(){
 		   });
 		  new WOW().init();
 		 }
-		});		
-		
+		});
+
 
         /* ==================================================
             # Magnific popup init
@@ -174,7 +174,7 @@ jQuery(document).ready(function(){
         /* ==================================================
             # Feedback Slider
          =================================================*/
-	   
+
 	   $('.feed-sldr').slick({
 			slidesToShow: 2,
 			slidesToScroll: 1,
@@ -197,11 +197,11 @@ jQuery(document).ready(function(){
 				}
 			]
 		});
-		        
+
         /* ==================================================
             # Blog Slider
          ================================================*/
-		
+
 	   $('.blog-sldr').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
@@ -224,7 +224,7 @@ jQuery(document).ready(function(){
 				}
 			]
 		});
-		
+
         /* ==================================================
             # Fun Factor Init
         ===============================================*/
@@ -234,7 +234,7 @@ jQuery(document).ready(function(){
         }, {
             accY: -100
         });
-		
+
 	/* ==================================================
 		Contact Form Validations
 	================================================== */
@@ -262,42 +262,47 @@ jQuery(document).ready(function(){
 					data: formData
 				})
 				.done(function(response) {
-					// Make sure that the formMessages div has the 'success' class.
-					$(formMessages).removeClass('error');
-					$(formMessages).addClass('success');
-
-					// Set the message text.
+                    $(formMessages).addClass('success');
 					$(formMessages).text(response);
+					$(formMessages).show(1500);
 
 					// Clear the form.
 					$('#contact-form input,#contact-form textarea').val('');
+                    $('input[name="_token"]').val($('meta[name="csrf_token"]').attr('content'));
+					setTimeout(function() {
+                        $(formMessages).hide(100);
+                        $(formMessages).removeClass('success');
+                    },4000);
+
 				})
 				.fail(function(data) {
 					// Make sure that the formMessages div has the 'error' class.
-					$(formMessages).removeClass('success');
 					$(formMessages).addClass('error');
+					$(formMessages).text('Error al enviar correos');
+					$(formMessages).show(1500);
 
-					// Set the message text.
-					if (data.responseText !== '') {
-						$(formMessages).text(data.responseText);
-					} else {
-						$(formMessages).text('Oops! An error occured and your message could not be sent.');
-					}
+					// Clear the form.
+					$('#contact-form input,#contact-form textarea').val('');
+                    $('input[name="_token"]').val($('meta[name="csrf_token"]').attr('content'));
+					setTimeout(function() {
+                        $(formMessages).hide(100);
+                        $(formMessages).removeClass('error');
+                    },4000);
 				});
 			});
 
-		});				
-		
+		});
+
         /* ==================================================
             Preloader Init
          ===============================================*/
-		 
+
         $(window).on("load", function() {
             // Animate loader off screen
             $(".se-pre-con").fadeOut("slow");
         });
-        
-		
+
+
 		 /* ==================================================
             Mouse Animation
         ================================================== */
@@ -322,6 +327,6 @@ jQuery(document).ready(function(){
 				}
 				}
 			};
-			theme_tm_cursor()	
-		
+			theme_tm_cursor()
+
 }); // end document ready function
