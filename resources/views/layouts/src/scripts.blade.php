@@ -16,4 +16,5 @@
 <script src=" {{asset('assets/js/splitting.min.js')}}"></script>
 <script src=" {{asset('assets/js/jquery.particles.min.js')}}"></script>
 <script src=" {{asset('assets/js/YTPlayer.min.js')}}"></script>
+<script src="https://www.google.com/recaptcha/api.js?render={{config('services.recaptcha.key')}}"></script>
 <script src=" {{asset('assets/js/main.js')}}"></script>

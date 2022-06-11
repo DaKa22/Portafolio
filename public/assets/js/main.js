@@ -251,44 +251,56 @@ jQuery(document).ready(function(){
 			$(form).submit(function(e) {
 				// Stop the browser from submitting the form.
 				e.preventDefault();
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6LdvaV4gAAAAAJOD5LZ5HndzKGhWC8qqqDncbTnl', {action: 'email'}).then(function(token) {
+                        form.prepend('<input type="hidden" name="token" value="' + token + '">');
+                        form.prepend('<input type="hidden" name="action" value="email">');
+                        // Serialize the form data.
+                        var formData = $(form).serialize();
 
-				// Serialize the form data.
-				var formData = $(form).serialize();
+                        // Submit the form using AJAX.
+                        $.ajax({
+                            type: 'POST',
+                            url: $(form).attr('action'),
+                            data: formData
+                        })
+                        .done(function(response) {
+                            $(formMessages).addClass('success');
+                            $(formMessages).text(response);
+                            $(formMessages).show(1500);
 
-				// Submit the form using AJAX.
-				$.ajax({
-					type: 'POST',
-					url: $(form).attr('action'),
-					data: formData
-				})
-				.done(function(response) {
-                    $(formMessages).addClass('success');
-					$(formMessages).text(response);
-					$(formMessages).show(1500);
+                            // Clear the form.
+                            $('#contact-form input,#contact-form textarea').val('');
+                            $('input[name="_token"]').val($('meta[name="csrf_token"]').attr('content'));
+                            $('input[name="token"]').val(token);
+                            $('input[name="action"]').val('email');
 
-					// Clear the form.
-					$('#contact-form input,#contact-form textarea').val('');
-                    $('input[name="_token"]').val($('meta[name="csrf_token"]').attr('content'));
-					setTimeout(function() {
-                        $(formMessages).hide(100);
-                        $(formMessages).removeClass('success');
-                    },4000);
+                            setTimeout(function() {
+                                $(formMessages).hide(100);
+                                $(formMessages).removeClass('success');
+                            },4000);
 
-				})
-				.fail(function(data) {
-					// Make sure that the formMessages div has the 'error' class.
-					$(formMessages).addClass('error');
-					$(formMessages).text('Error al enviar correos');
-					$(formMessages).show(1500);
+                        })
+                        .fail(function(data) {
+                            // Make sure that the formMessages div has the 'error' class.
+                            $(formMessages).addClass('error');
+                            $(formMessages).text('Error al enviar correos');
+                            $(formMessages).show(1500);
 
-					// Clear the form.
-					$('#contact-form input,#contact-form textarea').val('');
-                    $('input[name="_token"]').val($('meta[name="csrf_token"]').attr('content'));
-					setTimeout(function() {
-                        $(formMessages).hide(100);
-                        $(formMessages).removeClass('error');
-                    },4000);
-				});
+                            // Clear the form.
+                            $('#contact-form input,#contact-form textarea').val('');
+                            $('input[name="_token"]').val($('meta[name="csrf_token"]').attr('content'));
+                            $('input[name="token"]').val(token);
+                            $('input[name="action"]').val('email');
+
+                            setTimeout(function() {
+                                $(formMessages).hide(100);
+                                $(formMessages).removeClass('error');
+                            },4000);
+                        });
+                            });
+                        });
+
 			});
 
 		});

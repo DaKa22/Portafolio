@@ -26,8 +26,8 @@
                                 <div class="col-12 wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".5s">
                                     <textarea class="form-control input-style-2" name="message" placeholder="Mensaje" required></textarea>
                                 </div>
-                                <div class="col-12 text-center wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".6s">
-                                    <button type="submit" class="theme-btn send-me mt-30 text-center">
+                                <div class="col-12 text-center wow fadeInUp " data-wow-duration=".6s" data-wow-delay=".6s">
+                                    <button type="submit" class="theme-btn send-me mt-30 text-center" id="enviar">
                                         Enviar
                                     </button>
                                 </div>

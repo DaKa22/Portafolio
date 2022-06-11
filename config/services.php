@@ -30,4 +30,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'recaptcha' => [
+        'key' => '6LdvaV4gAAAAAJOD5LZ5HndzKGhWC8qqqDncbTnl',
+        'secret' => '6LdvaV4gAAAAAHiD8J6wUIss8pk19JyTkN9ivbcd'
+        // 'key' => '6LcpiV4gAAAAANUEST1-hCe9YZFuXRFdNRp1RR9h',
+        // 'secret' => '6LcpiV4gAAAAAF3NRpASApG54I8UZ0efcRqJWOrM'
+    ],
+
 ];
