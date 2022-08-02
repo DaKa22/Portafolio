@@ -19,7 +19,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: latest,${{ github.run_number }}
+          tags: user/app:latest
     # - uses: actions/checkout@master
     # - name: build and push to docker github
     #   uses: docker/build-push-action@v2
