@@ -25,7 +25,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: daka27/portafolio:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.repository }}:latest,${{ secrets.DOCKERHUB_USERNAME }}/${{ github.repository }}:${{ github.sha }},${{ secrets.DOCKERHUB_USERNAME }}/${{ github.repository }}:${{ github.run_number }}
     # - uses: actions/checkout@master
     # - name: build and push to docker github
     #   uses: docker/build-push-action@v2
