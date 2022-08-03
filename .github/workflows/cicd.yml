@@ -6,7 +6,8 @@ name: deploy
 env:
   REGISTRY: docker.pkg.github.com
   IMAGE_NAME: daka22/portafolio/portafolio
-  REPO_NAME: ${{ github.event.repository.name }}
+  # REPO_NAME: ${{ github.event.repository.name }}
+  REPO_NAME: portafolio
 jobs:
   build-and-push:
     name: build and push image
@@ -23,7 +24,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
       -
-        name: Build and push
+        name: Build and push github registry
         uses: docker/build-push-action@v3
         with:
           push: true
@@ -36,7 +37,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build and push
+        name: Build and push DOCKERHUB
         uses: docker/build-push-action@v3
         with:
           push: true
