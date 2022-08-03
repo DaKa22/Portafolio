@@ -27,7 +27,7 @@ jobs:
         with:
           push: true
 
-          tags: ${{ github.repository }}/latest,${{ github.repository }}/${{ github.run_number }}
+          tags: ${{ github.repository_owner }}/latest,${{ github.repository_owner }}/${{ github.run_number }}
     # - uses: actions/checkout@master
     # - name: build and push to docker github
     #   uses: docker/build-push-action@v2
