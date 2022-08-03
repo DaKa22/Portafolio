@@ -7,7 +7,7 @@ env:
   REGISTRY: docker.pkg.github.com
   IMAGE_NAME: daka22/portafolio/portafolio
   # REPO_NAME: ${{ github.event.repository.name }}
-  REPO_NAME: daka27/portafolio
+  IMAGE_NAME_DOCKERHUB: daka27/portafolio
 jobs:
   build-and-push:
     name: build and push image
@@ -42,7 +42,7 @@ jobs:
         with:
           push: true
 
-          tags: ${{ env.REPO_NAME }}:latest,${{ env.REPO_NAME}}:${{ github.sha }},${{ env.REPO_NAME}}:${{ github.run_number }}
+          tags: ${{ env.IMAGE_NAME_DOCKERHUB }}:latest,${{ env.IMAGE_NAME_DOCKERHUB}}:${{ github.sha }},${{ env.IMAGE_NAME_DOCKERHUB}}:${{ github.run_number }}
     # - uses: actions/checkout@master
     # - name: build and push to docker github
     #   uses: docker/build-push-action@v2
