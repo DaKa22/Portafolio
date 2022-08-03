@@ -10,7 +10,7 @@ env:
   IMAGE_NAME_DOCKERHUB: daka27/portafolio
 jobs:
   build-and-push-github-registry:
-    name: build and push image
+    name: build and push image GitHub Registry
     runs-on: ubuntu-latest
     steps:
       -
@@ -32,7 +32,7 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest,${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
 
   build-and-push-dockerhub:
-    name: build and push image
+    name: build and push image DockerHub
     runs-on: ubuntu-latest
     steps:
       -
