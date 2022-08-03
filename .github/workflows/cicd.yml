@@ -7,7 +7,7 @@ name: deploy
 env:
   REGISTRY: docker.pkg.github.com
   # IMAGE_NAME: ${{ github.repository }}
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: daka22/portafolio
 
 
 jobs:
@@ -15,6 +15,14 @@ jobs:
     name: build and push image
     runs-on: ubuntu-latest
     steps:
+      -
+        name: chekout
+        uses: actions/checkout@v2
+
+      -
+        name: Get tag
+        id: tag
+        uses: dawidd6/action-get-tag@v1
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -34,7 +42,8 @@ jobs:
         with:
           push: true
 
-          tags: ${{ env.IMAGE_NAME }}/latest,${{ env.IMAGE_NAME }}/${{ github.sha }},${{ env.IMAGE_NAME }}/${{ github.run_number }}
+          tags: ${{ env.IMAGE_NAME }}:latest,${{ env.IMAGE_NAME }}:${{ github.sha }},${{ env.IMAGE_NAME }}:${{ github.run_number }}
+          # tags: ${{ env.IMAGE_NAME }}:${{ steps.tag.outputs.tag }}
     # - uses: actions/checkout@master
     # - name: build and push to docker github
     #   uses: docker/build-push-action@v2
