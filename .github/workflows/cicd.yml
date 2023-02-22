@@ -64,5 +64,7 @@ jobs:
         username: ${{ secrets.DIGITALOCEAN_USER }}
         password: ${{ secrets.DIGITALOCEAN_PASS }}
         script: |
-          echo "holis"
 
+          cd ${{ secrets.PATH }}
+          docker-compose pull
+          docker-compose up -d
