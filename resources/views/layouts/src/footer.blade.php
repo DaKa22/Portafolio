@@ -93,7 +93,7 @@
                             <a href="https://github.com/DaKa22">
                             DaKa
                             </a>
-                            .Todos los derechos reservados  Andres kyc.
+                            .Todos los derechos reservados.
                         </span>
                     </div>
                 </div> <!-- end col-5 -->
