@@ -64,7 +64,8 @@ jobs:
         username: ${{ secrets.DIGITALOCEAN_USER }}
         password: ${{ secrets.DIGITALOCEAN_PASS }}
         script: |
-
+          echo ${{ secrets.DIGITALOCEAN_PASS }} | sudo -S -i
+          sudo -S -i
           cd ${{ secrets.PATH }}
           docker-compose pull
           docker-compose up -d
