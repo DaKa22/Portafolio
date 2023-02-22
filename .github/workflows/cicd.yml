@@ -9,27 +9,27 @@ env:
   # REPO_NAME: ${{ github.event.repository.name }}
   IMAGE_NAME_DOCKERHUB: daka27/portafolio
 jobs:
-  build-and-push-github-registry:
-    name: build and push image GitHub Registry
-    runs-on: ubuntu-latest
-    steps:
-      -
-        name: chekout
-        uses: actions/checkout@v2
-      -
-        name: Login to github registry
-        uses: docker/login-action@v2
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.TOKEN }}
-      -
-        name: Build and push github registry
-        uses: docker/build-push-action@v3
-        with:
-          push: true
+  # build-and-push-github-registry:
+  #   name: build and push image GitHub Registry
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     -
+  #       name: chekout
+  #       uses: actions/checkout@v2
+  #     -
+  #       name: Login to github registry
+  #       uses: docker/login-action@v2
+  #       with:
+  #         registry: ${{ env.REGISTRY }}
+  #         username: ${{ github.actor }}
+  #         password: ${{ secrets.TOKEN }}
+  #     -
+  #       name: Build and push github registry
+  #       uses: docker/build-push-action@v3
+  #       with:
+  #         push: true
 
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest,${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
+  #         tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest,${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
 
   # build-and-push-dockerhub:
   #   name: build and push image DockerHub
@@ -51,7 +51,7 @@ jobs:
 
 
   deploy:
-    needs: build-and-push-github-registry
+    # needs: build-and-push-github-registry
     name: Deploy
     runs-on: ubuntu-latest
     steps:
