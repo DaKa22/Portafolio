@@ -58,7 +58,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: SSH into server
-      uses: appleboy/ssh-action@v0.3.0
+      uses: appleboy/ssh-action@v0.1.7
       with:
         host: ${{ secrets.DIGITALOCEAN_IP }}
         username: ${{ secrets.DIGITALOCEAN_USER }}
