@@ -130,7 +130,7 @@
 										<div class="about-cn">
 											<ul>
 												<li><i class="fas fa-map-marker-alt"></i> Neiva - Huila, Colombia</li>
-												<li><i class="fas fa-birthday-cake"></i> 16 abril, 20002</li>
+												<li><i class="fas fa-birthday-cake"></i> 16 abril, 2002</li>
 
 											</ul>
 										</div>

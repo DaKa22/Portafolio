@@ -11,7 +11,7 @@
                     <li class="nav-item"><a class="nav-link smooth-scroll" href="#about"><i class="icofont-contact-add"></i> <span class="toltip">About</span></a></li>
                     <li class="nav-item"><a class="nav-link smooth-scroll" href="#service"><i class="icofont-file-document"> </i><span class="toltip">Service</span> </a></li>
                     <li class="nav-item"><a class="nav-link smooth-scroll" href="#work"><i class="icofont-briefcase-1"></i> <span class="toltip">Works</span> </a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#feed"><i class="icofont-quote-left"></i> <span class="toltip">Review</span></a></li>
+                    {{-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#feed"><i class="icofont-quote-left"></i> <span class="toltip">Review</span></a></li> --}}
                     {{-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#blog"><i class="icofont-blogger"></i> <span class="toltip">Blog</span> </a></li> --}}
                     <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact"><i class="icofont-envelope"></i> <span class="toltip">Email</span> </a></li>
                 </ul>
